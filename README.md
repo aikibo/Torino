@@ -2,20 +2,50 @@
 
 ## Introduction & Business Problem
 
-### Questions:
+<details>
+  <summary>👀 Show code </summary>
 
-1) How many of you know Turin?
+```python
+#show the output
+import matplotlib.pyplot as plt
+from PIL import Image
+from pylab import *
 
-2) How many of you would choose Turin as the travel destination during the next holidays?
+img0 = np.array(Image.open('photo-1504542982118-59308b40fe0c.jpeg'))
+fig = plt.figure()
+plt.imshow(img0, interpolation='bilinear')
+fig.set_figwidth(8)
+fig.set_figheight(10)
+plt.axis('off')
+plt.show()
+
+print('Courtesy of Unsplash.')
+```
+</details>
+
+![png](photo-1504542982118-59308b40fe0c.jpeg)
 
 ### The objective of this assignment:
 
-Increase the international turism of this marvelous city and make easier exploring it. 
+Increase the international turism of this marvelous city and make a curious alternative to explore it.
+For this purpose, I created an interactive guide and I used Foursquare location data to extrapolate useful information about museums, restaurants and hotels.
 
-Looking at the statistics, Italy is the fifth most visited country in international turism in 2018. In 2017, the overall had 420.63 million visitor nights, of which 210.66 million were of foreign guests (50.08%) (font: https://en.wikipedia.org/wiki/Tourism_in_Italy). But only 1.8 million foreign visitors (out of a total of 7.0 million visitors) visited Turin. in fact, as shown in the table, it is in 13th place!
+### Target audience:
+
+Addressed to all those who have decided to plan a trip to Italy.
+
+### The questions are:
+
+1) How much you know about Turin?
+
+2) Have you chosen Turin as travel destination for your next holidays?
+
+### Statistics:
+
+Looking at the statistics, Italy is the fifth most visited country in international turism in 2018. In 2017, the overall had 420.63 million visitor nights, of which 210.66 million were of foreign guests (50.08%) (source: https://en.wikipedia.org/wiki/Tourism_in_Italy). But only 1.8 million foreign visitors (out of a total of 7.0 million visitors) visited Turin. in fact, as shown in the table, it is in 13th place! And this is another little goals: try to promote Turin to a better ranking.
 
 <details>
-  <summary>👀 Espandi codice </summary>
+  <summary>👀 Show code </summary>
 
 ```python
 #import all library
@@ -185,9 +215,13 @@ df.head(15)
     </tr>
   </tbody>
 </table>
-If you are interest to visit this city, continue to read this notebook and enjoy yourself to find more about it!
+</div>
 
-Here I leave you some useful links:
+
+
+If you are interested to visit this city, continue to read this notebook and enjoy yourself to find out more!
+
+Here I left some useful links for you:
 
 1. https://www.turismotorino.org/en
 
@@ -196,7 +230,7 @@ Here I leave you some useful links:
 ### About the city:
 
 <details>
-  <summary>👀 Espandi codice </summary>
+  <summary>👀 Show code </summary>
 
 ```python
 #show the output
@@ -213,15 +247,14 @@ fig.set_figheight(14)
 plt.axis('off')
 plt.show()
 
-print('The photo is take from: https://unsplash.com/photos/_PuPe2QmsEc')
+print('A beautiful view of Turin. Courtesy of Unsplash.')
 ```
 </details>
 
 ![png](samuele-giglio-_PuPe2QmsEc-unsplash.jpg)
 
 
-    The photo is take from: https://unsplash.com/photos/_PuPe2QmsEc
-
+    A beautiful view of Turin. Courtesy of Unsplash.
 
 `Turin` (/tjʊəˈrɪn, ˈtjʊərɪn/ tewr-IN, TEWR-in, Piedmontese: `[tyˈriŋ]` (About this soundlisten); Italian: Torino `[toˈriːno]`(About this soundlisten); Latin: Augusta Taurinorum, then Taurinum) is a city and an important business and cultural centre in northern Italy. It is the capital city of Piedmont and of the Metropolitan City of Turin, and was the first Italian capital from 1861 to 1865. The city is located mainly on the western bank of the Po River, in front of Susa Valley, and is surrounded by the western Alpine arch and Superga Hill. The population of the city proper is 875,698 (31 December 2018) while the population of the urban area is estimated by Eurostat to be 1.7 million inhabitants. The Turin metropolitan area is estimated by the OECD to have a population of 2.2 million.
 
@@ -229,4 +262,4 @@ Turin is sometimes called "the cradle of Italian liberty" for having been the bi
 
 The city has a rich culture and history, being known for its numerous art galleries, restaurants, churches, palaces, opera houses, piazzas, parks, gardens, theatres, libraries, museums and other venues. Turin is well known for its Renaissance, Baroque, Rococo, Neo-classical, and Art Nouveau architecture.
 
-In addition, the city is home to museums such as Museo Egizio, Mole Antonelliana and Museo Nazionale del Cinema. The city also hosts some of Italy's best universities, colleges, academies, lycea and gymnasia, such as the University of Turin, founded in the 15th century, and the Turin Polytechnic. Turin is well known as the home of the Shroud of Turin, the football teams Juventus F.C. and Torino F.C., and as host of the 2006 Winter Olympics (font: https://en.wikipedia.org/wiki/Turin)
+In addition, the city is home to museums such as Museo Egizio, Mole Antonelliana and Museo Nazionale del Cinema. The city also hosts some of Italy's best universities, colleges, academies, lycea and gymnasia, such as the University of Turin, founded in the 15th century, and the Turin Polytechnic. Turin is well known as the home of the Shroud of Turin, the football teams Juventus F.C. and Torino F.C., and as host of the 2006 Winter Olympics (source: https://en.wikipedia.org/wiki/Turin)
